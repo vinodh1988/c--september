@@ -1,0 +1,187 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!markdown
+
+### Arithmetic Operators ( +, -, *, /  %)
+
+#!csharp
+
+Console.WriteLine($"12%5 == {12%5}")
+
+#!markdown
+
+### Relational Operators (>,<,>=,<=, ==,!=)
+
+#!csharp
+
+int a=20;
+int b=40;
+Console.WriteLine($"a>b: {a>b}");
+bool x=true, y=false;
+Console.WriteLine((x==(a>b))+ " is the result");
+Console.WriteLine((x!=(a>b))+ " is the result");
+
+#!markdown
+
+### Logical Operator ( &&, ||, !)
+
+#!csharp
+
+Console.WriteLine($"True && True is {true&&true}");
+Console.WriteLine($"True && False is {true&&false}");
+Console.WriteLine($"False && True is {false&&true}");
+Console.WriteLine($"False && false is {false&&false}");
+
+Console.WriteLine($"True || True is {true||true}");
+Console.WriteLine($"True || False is {true||false}");
+Console.WriteLine($"False || True is {false||true}");
+Console.WriteLine($"False || false is {false||false}");
+
+Console.WriteLine($"Negation of true is : {!true}");
+
+#!markdown
+
+#### Logical Progam for relational and Logical operators
+
+#!csharp
+
+//program to check whether a number is divisable by 15 and 3 digit
+
+int input=992;
+
+if(input%15==0  && (input>=100 && input<=999)) {
+    Console.WriteLine($" input has passed the requirement");
+}
+else{
+      Console.WriteLine($" input has not passed the requirement");
+}
+
+#!markdown
+
+### increment and Decrement operator
+
+#!csharp
+
+int a=90;
+a++;//post increment
+Console.WriteLine($"a:{a}");
+int x=a++; // x would be 91 a would be 92
+Console.WriteLine($"x: {x} a: {a}");
+int y=++a; // y would be 93 a would be 93
+Console.WriteLine($"x: {y} a: {a}");
+
+#!markdown
+
+### one More example 
+
+#!csharp
+
+int a=30;
+int b=40;
+ 
+int c = a++ + b++ ;
+
+Console.WriteLine($"a: {a} b:{b} c: {c}");
+
+#!csharp
+
+int a=40;
+int b=35;
+
+if(a++ > 50 && b++ > 40) {
+    Console.WriteLine("Condition passed");
+}
+else if(a==41) {
+    Console.WriteLine("Original failed but A incremeted");
+}
+else
+    Console.WriteLine("Condition Failed");
+
+Console.WriteLine($" {a} and {b} is the current value of a and b");
+
+#!markdown
+
+#### Ternary operator
+
+#!csharp
+
+int score=56;
+
+string status = score>75 ? "qualified" : "disqualified";
+
+string grade = score> 90? "Excellent" : score>=75?"Good": "Failed";
+
+Console.WriteLine($"Status: {status} and Grade: {grade}");
+
+#!markdown
+
+### BITWISE Operators (&,|,^, >>,<<, ~)
+
+#!markdown
+
+```
+
+  bitvise 
+   
+    &   - and
+	|    - or
+	^   - xor
+	>>  - right shift
+	<<  - left shift
+	~  negation
+	
+	int a=20----->    000000000000000010100
+    int	b=10------> 00000000000000000001010
+	
+	a=20             10100
+	b=10		     01010
+	      ------------------
+		             00000 --> & 
+					 11110 --> |  (16+8+4+2=30)
+					 11110 --> ^  (30)
+	a=5              00101
+	b=17             10001
+	               -------------
+				     00001 -----> &  ->1
+					 10101 ------> | ->21
+					 10100--------> ^ --> 20
+	positive and negative operator ?  
+	
+	
+	 xor - either of the operators true -> true , both true and both false --> false
+     ```
+
+#!csharp
+
+int a=20;
+int b=10;
+Console.WriteLine($" a&b : {a&b}");
+Console.WriteLine($" a|b : {a|b}");
+Console.WriteLine($" a^b : {a^b}");
+a=5;
+b=17;
+Console.WriteLine($" a&b : {a&b}");
+Console.WriteLine($" a|b : {a|b}");
+Console.WriteLine($" a^b : {a^b}");
+
+#!csharp
+
+int a=25;
+
+Console.WriteLine($"a>>2: {a>>2}");
+
+Console.WriteLine($"a<<2: {a<<2}");
+
+#!csharp
+
+a=20;
+b=21;
+int c=-18;
+
+Console.WriteLine($" ~a: {~a}");
+
+Console.WriteLine($" ~b: {~b}");
+
+Console.WriteLine($" ~c: {~c}");

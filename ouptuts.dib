@@ -1,0 +1,81 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!markdown
+
+### Formatted output
+
+#!csharp
+
+int a=20;
+string name="Roger";
+float weight=53.33f;//by default any number with decimal point is double
+                    //if it hast to be float use suffix f
+
+Console.WriteLine("a: {0}, name: {1}, weight: {2}",a,name,weight);
+
+#!markdown
+
+### Formatted output with variable substitution 
+
+#!csharp
+
+int a=20;
+string name="Roger";
+float weight=53.33f;//by default any number with decimal point is double
+                    //if it hast to be float use suffix f
+
+Console.WriteLine($"a: {a}, name: {name}, weight: {weight}");
+
+#!markdown
+
+Number Formatting
+
+#!csharp
+
+float price = 123.456f;
+Console.WriteLine("Price: {0:F2}", price); 
+
+#!markdown
+
+## Casting
+
+#!csharp
+
+double d=34.4;
+//float f=d;
+float f=(float)d;
+Console.WriteLine($"f is:{f}");
+
+#!markdown
+
+Implicit Type Variables
+
+#!csharp
+
+var name="Johsnon";
+var marks=55;
+
+Console.WriteLine($"name: {name} Marks: {marks}");
+Console.WriteLine($"Name Type: {name.GetType()} Marks Type: {marks.GetType()}");
+
+//name=39.990;  not possible
+
+#!markdown
+
+### Tabular Formatting
+
+#!csharp
+
+Console.WriteLine("{0,-10} {1,5}", "Name", "Age");  // Aligns 'Name' to the left and 'Age' to the right
+Console.WriteLine("{0,-10} {1,5}", "Alice", 30);
+Console.WriteLine("{0,-10} {1,5}", "Bob", 25);
+
+#!csharp
+
+string name= Console.ReadLine();
+int age= int.Parse(Console.ReadLine());
+float score= float.Parse(Console.ReadLine());
+
+Console.WriteLine($"name: {name} age: {age} score: {score}")
