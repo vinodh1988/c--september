@@ -1,0 +1,47 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!markdown
+
+### C functions
+
+* C# functions conventionally should be named starting with upper case
+* C# functions must have return types if it is not returning the return
+type must be void
+* c# functions may or may  not have parameters
+
+#!csharp
+
+static void  Greet(){
+    Console.WriteLine("Hello");
+} //function definition
+
+Greet(); //function call
+
+#!csharp
+
+static void SayHi(string name) {
+    Console.WriteLine($"Hi {name}");
+}
+
+SayHi("Roger");
+
+#!csharp
+
+static void PrintDetails(int sno,String name,String city) {
+    Console.WriteLine($"Sno:{sno} Name: {name} city: {city}");
+}
+
+
+PrintDetails(1,"Roger","Chennai");
+PrintDetails(2,"Nixon","Mumbai");
+PrintDetails(3,"Varun","chennai");
+
+#!csharp
+
+static string GreetHi(String name) {
+    return $"Hi {name}";
+}
+
+Console.WriteLine(GreetHi("Naman"));

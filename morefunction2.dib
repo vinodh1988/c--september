@@ -1,0 +1,32 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!csharp
+
+static void Modify(int[] store) {
+     for(int x=0;x<store.Length;x++)
+     {
+        store[x]=store[x]+500;
+     }
+}
+
+int[] original = {34,356,4,34,6,46,466};
+
+Modify(original); // array passed to function is pass by reference
+
+foreach(int x in original)
+   Console.WriteLine(x);
+
+#!csharp
+
+int[] original = {34,356,4,34,6,46,466};
+int[] clone =(int[])original.Clone();
+Modify(clone); // array passed to function is pass by reference
+
+foreach(int x in original)
+   Console.WriteLine(x);
+
+Console.WriteLine("____________________________");
+   foreach(int x in clone)
+   Console.WriteLine(x);

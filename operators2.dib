@@ -1,0 +1,47 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!csharp
+
+int sum=0;
+int i=1;
+while(i<=10){
+    Console.WriteLine($"i: {i}");
+    i++;
+}
+
+#!csharp
+
+int sum=0;
+int i=1;
+while(i<=10){
+    sum+=i; //sum= sum+i;
+    i++;
+}
+Console.WriteLine($"sum: {sum}");
+
+#!markdown
+
+### Null Operators
+
+#!csharp
+
+// Null-Coalescing operator (??)
+string name = null;
+string name2 = "Rahul";
+string result = name ?? "Default Name";
+string result2 = name2 ?? "Default Name";
+Console.WriteLine(result);  // Output: Default Name
+Console.WriteLine(result2);
+
+#!markdown
+
+### Null  Conditional operator
+
+#!csharp
+
+string name = null;
+string name2= "Raj";
+Console.WriteLine(name?.ToUpper());
+Console.WriteLine(name2?.ToUpper());

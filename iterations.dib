@@ -1,0 +1,68 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!csharp
+
+Random random=new Random();
+int result = random.Next(5000);
+Console.WriteLine($"RandomNumber: {result}");
+
+String x=Console.ReadLine();
+
+#!csharp
+
+int x;
+int count=0;
+do {
+    Random random=new Random();
+    x=random.Next(3000);
+    Console.WriteLine($" random : {x}");
+    count++;
+}while(x!=509);
+Console.WriteLine($"Number of iterations: {count}");
+
+#!csharp
+
+for(int x=1;x<=10;x++) {
+    Console.WriteLine($"x:{x}");
+}
+
+#!csharp
+
+for(int x=1;x<=5;x++){
+    for(int y=1;y<=x;y++){
+        Console.Write(y+" ");
+    }
+    Console.WriteLine();
+}
+
+#!markdown
+
+### Break Demo
+
+#!csharp
+
+for(int x=1;x<=8;x++){
+    for(int y=1;y<=x;y++){
+        if(x==3 && y==3)
+           break;
+        if(x==5 && y==4)
+           break;
+        Console.Write(y+" ");
+    }
+    Console.WriteLine();
+}
+
+#!csharp
+
+for(int x=1;x<=8;x++){
+    for(int y=1;y<=x;y++){
+        if(x==4 && y==3)
+           continue;
+        if(x==6 && y==4)
+           continue;
+        Console.Write(y+" ");
+    }
+    Console.WriteLine();
+}
