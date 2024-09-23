@@ -1,0 +1,29 @@
+Output Formatting: Write a program to display your name, age, and address in a formatted manner using string interpolation.
+
+Input Handling: Create a program that prompts the user to enter two numbers, then calculate and display their sum, difference, product, and quotient.
+
+Data Types: Write a program to declare variables of different data types (int, float, double, bool, char) and display their default values.
+
+Type Conversion: Create a program that converts a user-input string into an integer and performs addition with another integer value.
+
+Arithmetic Operators: Build a calculator that performs addition, subtraction, multiplication, and division based on user input.
+
+Relational Operators: Write a program that accepts two integers and checks if the first number is greater than, less than, or equal to the second number.
+
+Logical Operators: Create a program that takes a user's age and checks if the user is eligible for voting (18 and above) and senior citizen benefits (60 and above).
+
+Ternary Operator: Write a program that uses a ternary operator to check if a given number is even or odd.
+
+Decision Making (if-else): Create a program to determine if a user-input year is a leap year.
+
+Iterative Statements (for loop): Write a program that displays the multiplication table for a given number up to 10.
+
+Jump Statements (continue/break): Build a program that prints numbers from 1 to 20 but skips multiples of 3 using continue. Stop the loop if a number exceeds 15 using break.
+
+Single-Dimensional Array: Create a program that accepts 5 numbers from the user, stores them in an array, and then displays them in reverse order.
+
+Multi-Dimensional Array: Write a program that creates a 2x3 matrix and accepts user input to fill the matrix, then displays the matrix.
+
+Basic Functions: Develop a program with a function that accepts two numbers as parameters and returns their product.
+
+Function Overloading: Create a program with two overloaded functions named CalculateArea – one that calculates the area of a circle and another that calculates the area of a rectangle.

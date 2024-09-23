@@ -30,3 +30,40 @@ foreach(int x in original)
 Console.WriteLine("____________________________");
    foreach(int x in clone)
    Console.WriteLine(x);
+
+#!markdown
+
+### PASS BY VALUE
+
+#!csharp
+
+public void ChangeInt(int copy) {
+     copy=copy+500;
+}
+
+public void ChangeInt32(Int32 copy){
+     copy=copy+500;
+}
+
+int original=50;
+ChangeInt(original);
+Console.WriteLine(original);
+
+Console.WriteLine("________________________________________");
+int original1=50;
+ChangeInt32(original1);
+Console.WriteLine((original1));
+
+#!markdown
+
+### Explicit pass by Reference
+
+#!csharp
+
+static void changeData(ref int copy) {
+    copy=copy+500;
+}
+
+int original=50;
+changeData(ref original);
+Console.WriteLine(original);

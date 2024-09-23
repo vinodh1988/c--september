@@ -1,0 +1,57 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!markdown
+
+#### Output parameters and out keyword
+
+#!csharp
+
+static int CalculateSumAndDifference(int a,int b,out int difference) {
+   difference = a-b;
+   return a+b;
+}
+
+
+
+
+int minus;
+int sum;
+sum=CalculateSumAndDifference(45,30,out minus);
+Console.WriteLine($"Sum(45,30): {sum} , Minus(45,30): {minus}");
+
+#!markdown
+
+### Extension Functions
+
+#!csharp
+
+string x="This is a sample string . With multiple lines of text";
+
+Console.WriteLine(x.ToUpper());
+Console.WriteLine("Arun".CompareTo("John"));
+Console.WriteLine(x.EndsWith("t"));
+//Console.WriteLine(x.Split()); System.String[]
+foreach(string a in x.Split())
+   Console.WriteLine(a);
+Console.WriteLine(x.Replace("is","are"));
+
+#!csharp
+
+int x=5080;
+Console.WriteLine(x.CompareTo(49));
+
+#!csharp
+
+using System;
+
+public static class StringExtensions
+{
+    public static string LenString(this string str)
+    {
+        return str+str.Length;
+    }
+}
+
+string name = "vinodh";
